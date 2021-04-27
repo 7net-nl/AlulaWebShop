@@ -1,0 +1,17 @@
+﻿@model List<AlulaShop.Service.ApplicationService.Products.ProductDto>
+
+@{ 
+    ViewBag.Title = "Index";
+}
+
+<vc:product-single-row product-id="@Model.LastOrDefault().ID"></vc:product-single-row>
+<partial name="FullBanner" />
+<vc:banner-with-double-row product-id="@Model.LastOrDefault().ID"></vc:banner-with-double-row>
+<partial name="IconFeature" />
+<vc:category-area category-dto="@Model.LastOrDefault().Categories.LastOrDefault()"></vc:category-area>
+<vc:blog-post-slider></vc:blog-post-slider>
+<vc:brand-logo-slider></vc:brand-logo-slider>
+
+<h2 class="text-success">Category Tag Helper</h2>
+<li asp-Action="Index" asp-Controller="Home"></li>
+

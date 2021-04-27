@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+   <partial name="Head" />
+</head>
+
+<body>
+    <partial name="Header" />
+    <vc:hero-slider></vc:hero-slider>
+    <partial name="SplitBanner" />
+
+    @RenderBody()
+
+    <partial name="NewsLetter" />
+    <partial name="Footer" />
+    <a href="#" class="scroll-top"></a>
+    <partial name="QuickModal" />
+    @*<partial name="NewsLetterPopUp" />*@
+    <partial name="AllScript" />
+
+    @RenderSection("Scripts", false)
+</body>
+
+</html>

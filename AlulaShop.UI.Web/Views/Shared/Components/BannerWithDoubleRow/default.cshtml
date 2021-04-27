@@ -1,0 +1,9 @@
+﻿@model FileImageDto
+
+<div class="row">
+    <div class="container">
+        <div class="col-lg-12">
+            <img src=@Url.Content($"~/assets/img/{Model.FileName}") class="w-75 h-25" />
+        </div>
+    </div>
+</div>
