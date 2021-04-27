@@ -7,6 +7,7 @@ ViewComponent,
 Partial view, 
 Dependency Injection, 
 SqlServer, 
+AutoMapper,
 Entity framework,
 Validation Fluent Api,
 .NetCore
